@@ -21,7 +21,7 @@ jobs:
     - name: Cleaning Cache
       run: npm run clean
     - name: Build static file
-      run: npm run build
+      run: npm run build-github
     - name: Deploy to Github pages
       run: |
         git config --global user.email "${{ secrets.USER_EMAIL }}"

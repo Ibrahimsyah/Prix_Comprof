@@ -26,4 +26,5 @@ module.exports = {
       __key: 'images',
     },
   ],
+  pathPrefix: '/Prix_Comprof',
 };
