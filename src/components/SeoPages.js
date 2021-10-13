@@ -9,7 +9,6 @@ const SeoPages = ({ title, children }) => {
         siteMetadata{
           title
           description
-          siteUrl
           keywords
         }
       }
