@@ -18,6 +18,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
       run: npm install
+    - name: Cleaning Cache
+      run: npm run clean
     - name: Build static file
       run: npm run build
     - name: Deploy to Github pages
