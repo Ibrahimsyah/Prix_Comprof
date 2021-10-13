@@ -13,6 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "lint": "eslint .",
     "deploy": "gh-pages -d public"
   },
   "dependencies": {
@@ -29,6 +30,9 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.26.1",
     "gh-pages": "^3.2.3"
   }
 }
