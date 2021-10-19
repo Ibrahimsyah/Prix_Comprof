@@ -1,32 +1,32 @@
-import * as React from 'react';
-
+import React, { lazy, Suspense } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import SeoPages from '../components/SeoPages';
 
-import carousel1 from '../assets/images/carousel-1.jpeg';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+const Header = lazy(() => import('../components/Header'));
+const Footer = lazy(() => import('../components/Footer'));
 
 const IndexPage = () => {
   return (
     <SeoPages>
-      <main>
-        <Header />
-        <section className="
+      <Suspense fallback={<h1>Please Wait...</h1>}>
+        <main className="fadeIn">
+          <Header />
+          <section className="
           h-screen
           hero
         ">
-          <img
-            src={carousel1}
-            className="
-            h-full
-            w-full
-            object-cover
-            "
-          />
-        </section>
-        <Footer/>
-      </main>
+            <StaticImage
+              src="../assets/images/carousel-1.jpeg"
+              placeholder="blurred"
+              layout="fullWidth"
+              className="h-full w-full object-cover"
+              alt="hero-1-image"
+            />
+          </section>
+          <Footer/>
+        </main>
+      </Suspense>
     </SeoPages>
   );
 };

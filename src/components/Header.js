@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import logo from '../assets/images/prix_logo.png';
 import hamburgerIcon from '../assets/icons/hamburger.png';
 
 const Header = () => {
@@ -32,9 +32,10 @@ const Header = () => {
       <div
         ref={mainNavRef}
         className="py-4 flex flex-row justify-between w-full md:w-auto items-center h-auto">
-        <img
-          src={logo}
-          className="w-auto h-12"
+        <StaticImage
+          src="../assets/images/prix_logo.png"
+          layout="fixed"
+          height={40}
           alt="PT.Prix Logo"
         />
         <img src={hamburgerIcon}
