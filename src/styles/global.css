@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prix-primary-color{
+  color: #F4D35E;
+}
