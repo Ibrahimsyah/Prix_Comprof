@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
       <div className="text-center text-black py-4">
         <p className="text-sm">
-        Copyright © 2020 PT. PT. Prix Berkat Abadi. All Right Reserved
+        Copyright © 2020 PT. Prix Berkat Abadi. All Right Reserved
         </p>
       </div>
     </section>
