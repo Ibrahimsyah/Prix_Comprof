@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Prix Comprof',
     description: 'PT.Prix Company Profile',
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://prixbi.com',
     keywords: 'Prix, PT. Prix, PT.Prix, PT.Prix Company Profile',
   },
   plugins: [
